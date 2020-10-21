@@ -32,5 +32,9 @@ public class MyTestClassLog4j {
          System.out.println("This is a system out message from : "+ MyTestClassLog4j.class);
          logger.error("This is a log4j message from : "+ MyTestClassLog4j.class);
   }
+  
+  public String talkAboutme(String name){
+      return "talking about " + name;  
+  }
 
 }
