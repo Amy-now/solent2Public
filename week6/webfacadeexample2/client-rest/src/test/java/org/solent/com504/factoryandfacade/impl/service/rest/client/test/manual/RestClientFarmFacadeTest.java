@@ -77,7 +77,17 @@ public class RestClientFarmFacadeTest {
 
     @Test
     public void testGetAnimal() {
-        fail("test not written");
+        LOG.debug("testGetAnimals()");
+        String animalName = "cato";
+        List<Animal> animals = farmFacade.getAnimalsOfType(animalType);
+        assertNotNull(animals);
+        String msg = "returned :" + animals;
+        for (Animal value : animals) {
+            msg = msg + value + ",\n";
+        }
+        LOG.debug(msg);
+        LOG.debug("end of GetAnimalsOfType()");
+        //fail("test not written");
     }
 
     @Test
